@@ -24,6 +24,15 @@ public interface UserProvider {
     Optional<User> getUserByEmail(String email);
 
     /**
+     * Retrieves a user based on exact first and last name match.
+     *
+     * @param firstName first name of the user
+     * @param lastName last name of the user
+     * @return an {@link Optional} containing found user or empty if none matched
+     */
+    Optional<User> getUserByName(String firstName, String lastName);
+
+    /**
      * Retrieves all users.
      *
      * @return An {@link Optional} containing the all users,

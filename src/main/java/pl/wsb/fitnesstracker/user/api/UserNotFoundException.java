@@ -16,4 +16,12 @@ public class UserNotFoundException extends NotFoundException {
         this("User with ID=%s was not found".formatted(id));
     }
 
+    public UserNotFoundException(String email, boolean isEmail) {
+        this("User with email=%s was not found".formatted(email));
+    }
+
+    public UserNotFoundException(String firstName, String lastName) {
+        this("User with name %s %s was not found".formatted(firstName, lastName));
+    }
+
 }
