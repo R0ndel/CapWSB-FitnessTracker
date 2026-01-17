@@ -8,6 +8,10 @@ import lombok.ToString;
 
 import java.time.LocalDate;
 
+/**
+ * Entity representing an application user.
+ * Stores basic identification and contact information.
+ */
 @Entity
 @Table(name = "users")
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
