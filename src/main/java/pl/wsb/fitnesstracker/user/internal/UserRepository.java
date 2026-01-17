@@ -11,7 +11,7 @@ import java.time.LocalDate;
  * Extends {@link JpaRepository} to provide CRUD operations and custom queries
  * for the {@code users} table.
  */
-interface UserRepository extends JpaRepository<User, Long> {
+public interface UserRepository extends JpaRepository<User, Long> {
 
     List<User> findByEmailContainingIgnoreCase(String email);
 
